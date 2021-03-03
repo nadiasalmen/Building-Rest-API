@@ -1,6 +1,8 @@
 class Api::V1::BaseController < ActionController::API
   include Pundit
 
+  helper_method :current_user
+
   after_action :verify_authorized, except: :index
   after_action :verify_policy_scoped, only: :index
 
@@ -17,5 +19,9 @@ class Api::V1::BaseController < ActionController::API
 
   def not_found(exception)
     render json: { error: exception.message }, status: :not_found
+  end
+
+  def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
 end

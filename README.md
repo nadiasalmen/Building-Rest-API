@@ -44,8 +44,7 @@ application up and running.
 
 7 - Add seeds to launch the app and test (enable)
 
-
-
-
-
-
+8 - Add endpoint - "Obtener un listado de órdenes" - GET /api/v1/orders
+    - Authorize all
+    - Add route
+    - Add index action
