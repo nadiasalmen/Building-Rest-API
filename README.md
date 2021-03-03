@@ -30,3 +30,9 @@ Steps followed to solve exercise:
 1 - Create new rails app with postgresql database
 
 2 - Add user model
+
+3 - Add order model
+
+4 - Add models associations and validations
+
+
