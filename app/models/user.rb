@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :orders
+  has_many :orders, dependent: :destroy
 
   validates :name, presence: true
   validates :name, length: { in: 2..50 }

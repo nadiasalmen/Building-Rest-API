@@ -3,29 +3,32 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+#Dependencies
 
-* Ruby version:
+* Ruby version: ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-darwin19]
+* Rails version: Rails 6.0.3.5
+* RubyGems
+* Bundler: Bundler version 2.1.4
 
------------------
+#Install dependencies with bundler: bundle install
 
-* System dependencies
+----------------------
 
-* Configuration
+#Database
 
-* Database creation
+* Database creation: rails db:create
 
-* Database initialization
+* Database initialization: rails db:migrate
 
-* How to run the test suite
+----------------------
 
-* Services (job queues, cache servers, search engines, etc.)
+#Deployment
 
 * Deployment instructions
 
 ----------------------
 
-Steps followed to solve exercise:
+#Steps followed to solve the exercise:
 
 1 - Create new rails app with postgresql database
 
@@ -34,5 +37,15 @@ Steps followed to solve exercise:
 3 - Add order model
 
 4 - Add models associations and validations
+
+5 - Install Pundit for authorization and policies
+
+6 - Create API base controller and config exceptions
+
+7 - Add seeds to launch the app and test (enable)
+
+
+
+
 
 
