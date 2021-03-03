@@ -48,3 +48,7 @@ application up and running.
     - Authorize all
     - Add route
     - Add index action
+
+9 - Add endpoint - "Obtener una orden por ID" - GET /api/v1/orders/:id
+
+
