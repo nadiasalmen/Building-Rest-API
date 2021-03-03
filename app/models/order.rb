@@ -13,10 +13,14 @@ class Order < ApplicationRecord
   private
 
   def add_payment_date
-    errors.add('Debe agregar la fecha de pago') if payment_status == 'pagada' || payment_date.nil?
+    if payment_status == 'pagada' && payment_date.nil?
+      errors.add(:payment_status, 'es pagada: debe agregar la fecha de pago')
+    end
   end
 
   def add_delivery_date
-    errors.add('Debe agregar la fecha de entrega') if order_status == 'entregada' || delivery_date.nil?
+    if order_status == 'entregada' && delivery_date.nil?
+      errors.add(:order_status, 'es entregada: debe agregar la fecha de entrega')
+    end
   end
 end
