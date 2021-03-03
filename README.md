@@ -5,7 +5,9 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version:
+
+-----------------
 
 * System dependencies
 
@@ -21,4 +23,10 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+----------------------
+
+Steps followed to solve exercise:
+
+1 - Create new rails app with postgresql database
+
+2 - Add user model
