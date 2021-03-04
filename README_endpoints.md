@@ -46,3 +46,10 @@ curl -i -X POST                                                              \
      -H 'X-User-Token: 9HQz-yGkCGRCHKzTHYtP'                                 \
      -d '{ "order": { "amount": "1500", "payment_status": "pendiente de pago", "order_status": "en preparación", "user_id":"1" } }' \
      http://localhost:3000/api/v1/orders
+
+#Eliminar una orden
+
+curl -i -X DELETE                               \
+     -H 'X-User-Email: colby.upton@dooley.co'         \
+     -H 'X-User-Token: aCy95pJhxqbxzvB8HRzj'    \
+     http://localhost:3000/api/v1/orders/50

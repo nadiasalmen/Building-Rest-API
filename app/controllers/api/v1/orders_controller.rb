@@ -1,6 +1,6 @@
 class Api::V1::OrdersController < Api::V1::BaseController
   acts_as_token_authentication_handler_for User, except: [ :index, :show ]
-  before_action :set_order, only: [ :show, :update ]
+  before_action :set_order, only: [ :show, :update, :destroy]
 
   def index
     @orders = policy_scope(Order)
@@ -26,6 +26,11 @@ class Api::V1::OrdersController < Api::V1::BaseController
     else
       render_error
     end
+  end
+
+  def destroy
+    @order.destroy
+    head :no_content
   end
 
   private
