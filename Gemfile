@@ -8,6 +8,10 @@ ruby '2.6.6'
 gem 'pundit'
 # fake seeds
 gem 'faker'
+# devise to manage users
+gem "devise"
+# token to store the session
+gem 'simple_token_authentication'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.5'

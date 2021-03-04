@@ -19,7 +19,8 @@ puts 'Creating new users'
 5.times do
   user = User.create!(
     name: Faker::Name.name,
-    email: Faker::Internet.email
+    email: Faker::Internet.email,
+    password: Faker::Internet.password
   )
   puts "Creating unpaid and undelivered orders for user #{user.id}"
   5.times do

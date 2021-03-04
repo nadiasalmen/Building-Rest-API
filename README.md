@@ -12,6 +12,14 @@ application up and running.
 
 #Install dependencies with bundler: bundle install
 
+# Custom gems
+# authorization
+gem 'pundit'
+# fake seeds
+gem 'faker'
+# token to store the session
+gem 'simple_token_authentication'
+
 ----------------------
 
 #Database
@@ -51,4 +59,6 @@ application up and running.
 
 9 - Add endpoint - "Obtener una orden por ID" - GET /api/v1/orders/:id
 
+10 - Add gem 'simple_token_authentication' to store session
 
+11 -
