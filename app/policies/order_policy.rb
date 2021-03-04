@@ -17,4 +17,8 @@ class OrderPolicy < ApplicationPolicy
     true
     # record.user == user
   end
+
+  def create?
+    true
+  end
 end

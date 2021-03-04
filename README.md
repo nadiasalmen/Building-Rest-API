@@ -19,6 +19,8 @@ gem 'pundit'
 gem 'faker'
 # token to store the session
 gem 'simple_token_authentication'
+# devise to manage users
+gem "devise"
 
 ----------------------
 
@@ -61,7 +63,9 @@ gem 'simple_token_authentication'
 
 10 - Add gem 'simple_token_authentication' to store session and add gem 'devise' for user authentication
 
-11 - Add endpoint - Modificar estado de pago de una orden y modificar estado de despacho de un orden
+11 - Add endpoint - "Modificar estado de pago de una orden y modificar estado de despacho de un orden" - PATCH /api/v1/orders/:id
 
-12 -
+12 - Add endpoint - "Ingresar nueva orden" - POST /api/v1/orders
+
+13 - Add endpoint - "Eliminar una orden" - DELETE /api/v1/orders/:id
 

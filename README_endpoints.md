@@ -37,3 +37,12 @@ curl -i -X PATCH                                        \
        -H 'X-User-Token: c9RLD_VnKivAYRa_x51y'          \
        -d '{ "order": { "payment_status": "no pagada" } }'    \
        http://localhost:3000/api/v1/orders/25
+
+#Crear una orden nueva orden
+
+curl -i -X POST                                                              \
+     -H 'Content-Type: application/json'                                     \
+     -H 'X-User-Email: ok_larson@kiehn.net'                                      \
+     -H 'X-User-Token: 9HQz-yGkCGRCHKzTHYtP'                                 \
+     -d '{ "order": { "amount": "1500", "payment_status": "pendiente de pago", "order_status": "en preparación", "user_id":"1" } }' \
+     http://localhost:3000/api/v1/orders

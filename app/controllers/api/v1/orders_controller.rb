@@ -17,6 +17,17 @@ class Api::V1::OrdersController < Api::V1::BaseController
     end
   end
 
+  def create
+    @order = Order.new(order_params)
+    @order.user = current_user
+    authorize @order
+    if @order.save
+      render :show, status: :created
+    else
+      render_error
+    end
+  end
+
   private
 
   def set_order

@@ -1,8 +1,6 @@
 class Order < ApplicationRecord
   belongs_to :user
 
-  validates :amount, presence: true
-  validates :amount, numericality: true
   validates :payment_status, presence: true
   validates :payment_status, inclusion: { in: ['pagada', 'no pagada', 'pendiente de pago']}
   validates :order_status, presence: true
