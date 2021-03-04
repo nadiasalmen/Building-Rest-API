@@ -37,4 +37,3 @@ curl -i -X PATCH                                        \
        -H 'X-User-Token: c9RLD_VnKivAYRa_x51y'          \
        -d '{ "order": { "payment_status": "no pagada" } }'    \
        http://localhost:3000/api/v1/orders/25
-

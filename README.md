@@ -59,6 +59,9 @@ gem 'simple_token_authentication'
 
 9 - Add endpoint - "Obtener una orden por ID" - GET /api/v1/orders/:id
 
-10 - Add gem 'simple_token_authentication' to store session
+10 - Add gem 'simple_token_authentication' to store session and add gem 'devise' for user authentication
 
-11 -
+11 - Add endpoint - Modificar estado de pago de una orden y modificar estado de despacho de un orden
+
+12 -
+
